@@ -192,26 +192,6 @@ for kle in d1.keys() | d2.keys():
         diict[kle] = str(val) + str(val1)        
 print(diict)
 
-dict_tot = {}
-for kle,vale in dictt.items():
-    if kle in dict_tot:
-        if isinstance(vale,int):
-            if isinstance(dict_tot[kle],int): 
-                dict_tot[kle] += int(vale)  
-            else:
-                dict_tot[kle] = int(vale)
-        elif isinstance(vale,(list,str,set)):
-            if isinstance(dict_tot[kle],(list,str,set)):
-                dict_tot[kle] += vale
-            else:
-                dict_tot[kle] = vale
-        else:
-            dict_tot[kle] = vale
-    else:
-        dict_tot[kle] = vale                
-
-print(dict_tot)
-
 print("****************PATI FONCTION*****************")
 print("nimewo 1:")
 def retounen(mo):
